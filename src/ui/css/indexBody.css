@@ -1,0 +1,20 @@
+.section_Index_Box{
+  margin: auto;
+  width: 1200px;
+  border:1px solid red;
+  margin-top: 30px;
+}
+.info_box{
+  width:100%;
+  display: flex;
+}
+.info_box>div:nth-child(1){
+  width: 25%;
+  height: 250px;
+  border:1px solid #000;
+  overflow: hidden;
+}
+.info_box_img{
+  width: 100%;
+  height: 100%;
+}

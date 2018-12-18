@@ -1,0 +1,50 @@
+.Header_Box{
+  width: 100%;
+  height: 36px;
+  background: #202020;
+  display: flex;
+  justify-content: space-between;
+}
+.HeaderLeft_box{
+  width: 50%;
+  color:#FFF;
+}
+.HeaderLeft_box>ul{
+  display: flex;
+  height: 100%;
+}
+.HeaderLeft_box>ul>li{
+  font-size:14px;
+  display: flex;
+  height: 100%;
+  padding: 0 20px;
+  cursor: pointer;
+  align-items: center;
+}
+.InputTop{
+  border:0;
+  border-radius: 20px;
+  width: 150px;
+  height: 20px;
+  margin-top: 9px;
+  padding-left: 15px;
+}
+.felx_box{
+  width: 50%;
+  color:#FFF;
+  clear: both;
+}
+.header_odiv_box{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.felx_box>ul{
+  display: flex;
+  float: right;
+}
+.felx_box>ul>li{
+  font-size: 14px;
+  padding: 8px;
+  cursor: pointer;
+}
