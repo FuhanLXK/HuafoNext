@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../ui/css/headerCss.css'
 import axios from 'axios';
-import { BrowserRouter as Router, Route ,Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 import Login from '../login/login'
 
 class Header extends Component {
@@ -86,7 +86,6 @@ class Header extends Component {
                 </li>
               </ul>
             </div>
-            <Router>
               <div className="felx_box">
                 <ul>
                   <li>
@@ -95,7 +94,6 @@ class Header extends Component {
                   <li>注册</li>
                 </ul>
               </div>
-            </Router>
           </div>
         </header>
     )

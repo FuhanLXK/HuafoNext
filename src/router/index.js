@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route ,Link , withRouter} from "react-router-dom";
+import { BrowserRouter as Router, Route} from "react-router-dom";
 import OneseifIndex from '../components/oneselfIndex'
 import Login from '../login/login'
 
@@ -14,7 +14,6 @@ class App extends Component {
   		</div>
 		</Router>
 		)
-
 		}
 	}
-export default withRouter(App);
+export default App;

@@ -1,15 +1,116 @@
-.addDading{
-  font-size:50px;
-  color:#15befe;
+.index_box_div{
+  width: 100%;
+  height:1000px;
+  background: linear-gradient(#000000,#4d4d4d);
 }
-.addDading-app{
-  font-size:40px;
-  color:#15befe;
+.ul_box_list{
+  width: 675px;
+  color:#FFF;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  left:400px;
+  top:35px;
 }
-.flex{
-  text-align: center;
-  margin-top: 20%;
+.ul_box_list>li{
+  font-size: 18px;
+  margin-right: 50px;
+  cursor:pointer;
 }
-p{
-  margin-bottom: 20px;
+.body_box_div{
+    color:#FFF;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 280px;
+}
+.body_box_div>p{
+    margin-bottom: 30px;
+    letter-spacing:8px;
+}
+.body_box_div>p:nth-child(1){
+    font-size: 35px !important;
+    transition: 2s;
+}
+.body_box_div>p:nth-child(3){
+    font-size: 30px !important;
+}
+.body_box_div>div>input{
+    width: 350px;
+    margin-right: 20px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    padding-left:20px;
+}
+.body_box_div>div>button{
+    padding:13px 23px 13px 23px;
+    background-color: #3c3c3c;
+    cursor: pointer;
+    border:0;
+    color:#FFF;
+    border-radius: 10px;
+}
+.font_box{
+    font-size: 25px !important;
+    margin-top: 25px;
+}
+.user_content_box{
+    width: 1200px;
+    height: 550px;
+    margin: 0 auto;
+    margin-top: 65px;
+    background-color: #FFF;
+    box-shadow: 1px 1px 20px #888888;
+}
+.user_content_box>ul{
+   width: 100%;
+   display: flex;
+   flex-wrap:wrap;
+   justify-content: space-between;
+}
+.user_content_box>ul>li{
+    width: 33%;
+    height: 222px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.user_content_box>ul>li>div{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 150px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.user_content_box>ul>li>div>img{
+    width: 100%;
+    height: auto;
+}
+.user_content_font{
+    color: #888888;
+     font-size: 20px;
+     text-indent:30px;
+     height: 85px;
+     width: 280px;
+     margin: 0 auto;
+     text-align: left;
+     overflow: hidden;
+     line-height: 30px;
+    text-overflow:ellipsis;
+
+    display:-webkit-box;
+
+    box-orient:vertical;
+
+    -webkit-line-clamp:2;
+}
+.user_name_box{
+    font-size: 22px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }

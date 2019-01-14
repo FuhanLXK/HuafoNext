@@ -1,15 +1,8 @@
-var MongoClient = require('mongoose');
-var url = "mongodb://localhost:27017/admin";
-
-MongoClient.connect(url, function(err, db) {
-  if (err) throw err;
-  console.log("数据库已创建!");
-  db.close();
-});
+var mongoose = require('mongoose');
 
 //类似于mysql的表 mongo字段
 
-const user = MongoClient.model('account', new MongoClient.Schema({
+const user = mongoose.model('accounts', new mongoose.Schema({
   username:{type:String,require:true},
   uid:{type:String,require:true},
   password:{type:String,require:true},
@@ -27,3 +20,7 @@ const user = MongoClient.model('account', new MongoClient.Schema({
 //     console.log(err)
 //   }
 // })
+
+
+
+module.exports = user
