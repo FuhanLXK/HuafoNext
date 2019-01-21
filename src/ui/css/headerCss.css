@@ -21,6 +21,9 @@
   cursor: pointer;
   align-items: center;
 }
+.HeaderLeft_box>ul>li>a{
+  color:#FFF;
+}
 .InputTop{
   border:0;
   border-radius: 20px;

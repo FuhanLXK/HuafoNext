@@ -17,6 +17,9 @@
   margin-right: 50px;
   cursor:pointer;
 }
+.ul_box_list>li>a{
+  color:#FFF;
+}
 .body_box_div{
     color:#FFF;
     font-size: 40px;

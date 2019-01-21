@@ -1,0 +1,134 @@
+.backgrund_box_color{
+  width: 100%;
+  height: 1465px;
+  background: -webkit-linear-gradient(#000000,#4d4d4d);
+  background: linear-gradient(#000000,#4d4d4d);
+}
+.message_box_div{
+  width: 1200px;
+  height: 1300px;
+  border:1px solid #FFF;
+  margin: 0 auto;
+  position: relative;
+  top:30px;
+  background-color: #FFF;
+  overflow: hidden;
+}
+.message_box_div>ul>li{
+    width: 100%;
+
+    height: 130px;
+    display: flex;
+    border-bottom: 1px solid #CCC;
+    padding: 5px;
+    padding-right: 0px !important;
+}
+.message_box_div>ul>li:hover{
+  box-shadow: 0px 0px 21px 0px #CCC;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.user_name{
+  width:130px;
+  height: 100%;
+  text-align: center;
+  margin-left: 20px;
+}
+.user_name>div{
+  width: 80px;
+  overflow: hidden;
+  height: 80px;
+  border-radius: 220px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.user_name>div>img{
+  width: 100%;
+}
+.user_name>p{
+  font-size: 20px;
+  color:#708090;
+  margin-top: 5px;
+}
+.font_user_box{
+  width: 750px;
+  height: 60px;
+  line-height: 28px;
+  text-indent: 30px;
+  margin-top: 35px;
+  margin-left: 30px;
+}
+.icon_img{
+  position: relative;
+}
+.icon_img>ul{
+  width: 275px;
+  display: flex;
+  height: 25px;
+  position: absolute;
+  bottom: 0;
+}
+.icon_img>ul>li{
+  width: 60px;
+  display: flex;
+  cursor: pointer;
+}
+.icon_img>ul>p{
+  margin-right: 20px;
+}
+.icon_img>ul>li>span{
+  position: relative;
+  top:2px;
+}
+.icon_img>ul>li>img{
+  width: 40%;
+  margin-right: 5px;
+}
+.user_box_div{
+  width: 1200px;
+  height: 130px;
+  background-color: #FFF;
+  margin: 0 auto;
+  position: relative;
+  top:15px;
+  display: flex;
+}
+.user_box_boxdiv{
+  width: 186px;
+  height: 130px;
+  text-align: center;
+}
+.user_box_boxdiv>div{
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 80px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.user_box_boxdiv>div>img{
+  width: 100%;
+}
+.user_box_boxdiv>p{
+  margin-top: 10px;
+}
+.input_class_style{
+  width: 850px;
+  height: 100px;
+  resize: none;
+  border:0;
+  padding-top: 30px;
+  font-size: 16px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-indent: 30px;
+}
+.user_box_div>button{
+  width: 130px;
+  background-color: #CCC;
+  color:#000;
+  border:0;
+  font-size: 18px;
+  cursor: pointer;
+
+}

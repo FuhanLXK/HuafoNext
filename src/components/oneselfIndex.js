@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import '../ui/css/oneseifIndex.css';
 import axios from 'axios';
-// import {Link} from "react-router-dom";
+import {Link} from "react-router-dom";
+import Header from "../components/header"
 
 class OneseifIndex extends Component {
 
@@ -14,7 +15,7 @@ class OneseifIndex extends Component {
 
     componentWillMount(){
         axios.get('http://localhost:3030/data',{
-
+          name:"li"
         })
         .then((res) => {
             this.setState(()=>({indexData:res.data}))
@@ -37,9 +38,12 @@ class OneseifIndex extends Component {
 
       return (
           <div>
+          <Header />
             <div className="index_box_div">
               <ul className="ul_box_list">
-                <li>留言板</li>
+                <li>
+                  <Link to="/Messaage">留言板</Link>
+                </li>
                 <li>悻悻之光</li>
                 <li>长夜漫漫</li>
                 <li>论坛</li>
@@ -60,7 +64,6 @@ class OneseifIndex extends Component {
                 </ul>
               </div>
             </div>
-
           </div>
       )
     }
