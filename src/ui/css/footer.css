@@ -5,6 +5,10 @@
   padding: 10px;
   padding-right: 0 !important;
   padding-left: 0 !important;
+  position: relative;
+}
+.footer_box_div>div{
+  display: flex;
 }
 .video{
   width: 50px;
@@ -20,5 +24,68 @@
   height: 90%;
   margin-left: 4px;
   margin-top: 3px;
+  cursor: pointer;
+}
+#audio_play{
+  display: none;
+}
+#pause{
+  width: 70%;
+  height: 70%;
+  margin-left: 7.7px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+#upplay{
+  width: 60% !important;
+  height: 60%;
+  margin-left: 7px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+#donwplay{
+  width: 60% !important;
+  height: 60%;
+  margin-left: 13px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.list_video{
+  display: flex;
+}
+.video_overflow{
+  overflow:inherit;
+}
+.list_video{
+  margin: 15px 0 0 50px;
+}
+.list_video>div{
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.list_video>div>img{
+  width: 100%;
+}
+.list_video>div:nth-child(2){
+  width: 22.5px;
+  height: 22.5px;
+  margin-left: 20px;
+}
+.micus_box_div{
+  width: 320px;
+  height: 70px;
+  position: absolute;
+  bottom: 70px;
+  right: 0px;
+  background: rgba(14,12,14,.5)
+}
+.micus_list_item{
+  width: 100%;
+}
+.micus_list_item>li{
+  color:#FFF;
+  font-size: 18px;
+  padding:15px 10px 10px 30px;
   cursor: pointer;
 }
