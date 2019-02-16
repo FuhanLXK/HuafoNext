@@ -6,31 +6,57 @@ class Footer extends Component {
   constructor(props){
     super(props)
     this.state = {
-      stateMicus:"false"
+      stateMicus:"false",
+      refMicus:null
     }
     this.audioPaly = this.audioPaly.bind(this)
     this.micusItem = this.micusItem.bind(this)
   }
 
+  handleMicus(link){
+    if(link != null){
+      this.setState(() => ({ refMicus:link }))
+    }
+  }
   // clickFooter(event){
   //     this.setState(() => ({
   //       stateMicus:"false"
   //     }))
   // }
 
+  //
+  /*
+    优化重复代码
+  */
+
+  obtai(dom,name,classa){
+    if(classa == "class"){
+      let name = document.getElementsByClassName(dom)[0];
+    }else{
+      let name = document.getElementById(dom);
+    }
+    return name
+  }
+
   /*
     显示音乐收藏
   */
   micusItem(){
-    this.setState(() => ({
-      stateMicus:"true"
-    }))
+    if(this.state.stateMicus == "true"){
+      this.setState(() => ({
+        stateMicus:"false"
+      }))
+    }else{
+      this.setState(() => ({
+        stateMicus:"true"
+      }))
+    }
   }
   /*
     判断到0时自动播放
   */
   audioCrtime(){
-    let Audio = document.getElementById("audio_play")
+    this.obtai("audio_play","Audio","id")
     console.log(Audio.currentTime)
     // Audio.currentTime == 0
   }
@@ -38,6 +64,7 @@ class Footer extends Component {
     控制播放
   */
   audioPaly(){
+    // this.obtai("audio_play","Audio","id")
     let Audio = document.getElementById("audio_play")
     let playBox = document.getElementById("play")
     let pauseBox = document.getElementById("pause")
@@ -60,7 +87,7 @@ class Footer extends Component {
     return(
       <div>
         <footer className="footer_box_div">
-        <MicusList states={this.state.stateMicus} />
+        <MicusList states={this.state.stateMicus} value={this.handleMicus} handleMicus={this.handleMicus.bind(this)} />
         {/*尾部主体部分*/}
           <div>
             <div className="video">
@@ -81,7 +108,7 @@ class Footer extends Component {
                 </div>
               </div>
             </div>
-            <audio src={require("../ui/video/gudu.mp3")} controls="controls" id="audio_play"></audio>
+            <audio src={this.state.refMicus} controls="controls" id="audio_play"></audio>
           </div>
         </footer>
       </div>

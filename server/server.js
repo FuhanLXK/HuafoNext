@@ -133,6 +133,19 @@ app.get('/headerIndex',function(req,res){
   }])
 })
 
+app.get('/micusItem',function(req,res){
+  res.json([{
+    micusName:"千月兔,双笙,封茗囧菌 - 【34只】2018～朝你靠近～",
+    link:"http://www.huafuo.net/audio/cnkj.mp3"
+  },{
+    micusName:"封茗囧菌,洛少爷 - 伞下铭",
+    link:"http://www.huafuo.net/audio/sxm.mp3"
+  },{
+    micusName:"大柯 - 静悄悄（Cover：大泫）",
+    link:"http://www.huafuo.net/audio/jqq.mp3"
+  }])
+})
+
 app.listen(3030,() => {
   console.log("node 3030端口成功")
 })

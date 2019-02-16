@@ -3,6 +3,7 @@
   height: 1465px;
   background: -webkit-linear-gradient(#000000,#4d4d4d);
   background: linear-gradient(#000000,#4d4d4d);
+  overflow: hidden;
 }
 .message_box_div{
   width: 1200px;
